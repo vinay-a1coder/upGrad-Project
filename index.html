@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upGrad</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="headContainer">
+            <div class="head_flex" style="display: flex; align-items: center; margin-right: 105px;">
+                <a href="#" style="color: red;font-size: x-large; font-weight: bolder;"><b>UpGrad</b></a>
+                <div class="dropdown">
+                    <button class="dropbtn head_flex"><b>Courses &#x21a7;</b></button>
+                    <div class="dropdown-content">
+                    <a href="#">MBA(10)</a>
+                    <a href="#">Data Science(9)</a>
+                    <a href="#">Doctorate(1)</a>
+                    <a href="#">Software & Tech(19)</a>
+                    <a href="#">AI & ML(7)</a>
+                    <a href="#">Marketing(4)</a>
+                    <a href="#">Management(13)</a>
+                    <a href="#">Law(3)</a>
+                    <!-- <a href="#">Study Abroad(19)</a> -->
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin-left: 105px; ">
+                    <div class="head_flex"><a href="#">HIRE FROM UPGRAD</a></div>
+                    <div class="head_flex"><a href="#">STUDY ABROAD</a></div>
+                    <div class="head_flex"><a href="#">FOR BUSINESS</a></div>
+                    <div class="dropdown head_flex"><a class="" href="#">MORE</a>
+                        <div class="dropdown-content">
+                            <a href="#">upGrad Webinar</a>
+                            <a href="#">Refer and Earn</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Become a Business Associate</a></div>
+                        </div>
+                    <div><button class="dropbtn head_flex"><b>Sign Up</b></button></div>
+                </div>
+            </div>   
+        </div>
+    </header>
+    <main>
+        <div class="main_div">
+        <section>
+            <div class="slideshow-container" style="margin: 0px 1px 0px 100px;">
+                <div class="mySlides fade"><img src="/images/crousel_1.jpg" width="1100px" height="300px"></div>
+                <div class="mySlides fade"><img src="/images/crousel_2.jpg" width="1100px" height="300px"></div>
+                <div class="mySlides fade"><img src="/images/crousel_3.jpg" width="1100px" height="300px"></div>
+                <div class="mySlides fade"><img src="/images/crousel_4.jpg" width="1100px" height="300px"></div>
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>      
+                </div>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </section>
+        <section class="section_b" style="width: 95vw; height: 128px;  background-color: #fafbfc; ">
+            <div >
+            <div class="section_b_maindiv"  style="display: flex; margin: 0px 1px 0px 120px;">
+                <div class="section_b_flex"   style="display: flex; width: 30vw; padding-top: 40px;">
+                    <img src="images/sectionB_1.png" >
+                    <p><b>Jobs in 1000+</b>Top Companies</p>
+                </div>
+                <div class="section_b_flex"  style="display: flex; width: 35vw; padding-top: 40px;">
+                    <img src="images/sectionB_2.png">
+                    <p><b>50%</b>Average Hike</p>
+                </div>
+                <div class="section_b_flex"  style="display: flex; width: 35vw; padding-top: 40px;">
+                    <img src="images/sectionB_3.png">
+                    <p><b>Top 1%</b>Global Universities</p>                    
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="dropbtn" style="padding: 20px; width: 300px; border-radius: 10px; font-size: larger;"><b>Explore Our Courses</b></button>
+            </div>
+            </div>
+        </section>
+
+        <section class="section_c">
+            <div>
+                <h1 style="font-size: 40px;">Our Top University Partners</h1>
+                <div class="section_c_flex" style="display: flex;">
+                    <div class="section_c_card">
+                        <img src="/images/section_c_1.jpeg" width="184">
+                    </div>
+                    <div class="section_c_card">
+                        <img src="/images/section_c_2.jpeg" width="184">
+                    </div>
+                    <div class="section_c_card">
+                        <img src="/images/section_c_3.jpeg" width="184" height="62px">
+                    </div>
+                    <div class="section_c_card">
+                        <img src="/images/section_c_4.jpeg" width="184" height="62px">
+                    </div>
+                    <div class="section_c_card">
+                        <img src="/images/section_c_5.jpeg" width="184" height="62px">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section_d">
+            <div>
+                <h1 style="font-size: 40px;">Our Courses</h1>
+                <div class="section_d_display" style="display: flex; justify-content: space-around;">
+                    <h3 style="text-decoration: underline;">For Working Professionals</h3>
+                    <h3>Master's</h3>
+                    <h3>Doctorate</h3>
+                    <h3>Study Abroad</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_e">
+            <div style="margin-top: 60px;">
+                <h3>MBA</h3>
+                <div class="section_e_flex" style="display: flex;">
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_1.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_1_1.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_2.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_2_2.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 20px;">
+                        <img class="section_e_img" src="/images/section_e_3.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_3_3.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 60px;">
+                <h3>Data Science</h3>
+                <div class="section_e_flex" style="display: flex;">
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_1.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_1_1.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_2.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_2_2.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 20px;">
+                        <img class="section_e_img" src="/images/section_e_3.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_3_3.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style="margin-top: 60px;">
+                <h3>Software & Tech</h3>
+                <div class="section_e_flex" style="display: flex;">
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_1.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_1_1.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 30px;">
+                        <img class="section_e_img" src="/images/section_e_2.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_2_2.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+    
+                    <div class="section_e_space" style="display: inline-block; margin-right: 20px;">
+                        <img class="section_e_img" src="/images/section_e_3.jpeg" >
+                        <div class="section_e_card">
+                          <div style="padding: 10px;">
+                            <div style="display: flex;">
+                            <img src="/images/section_e_3_3.jpeg" width="60" height="48">
+                            <h5 style="margin: auto;">Liverpool John Moores<br> University</h5>
+                          </div><hr>
+                          <div>
+                            <h4>MBA | Liverpool Business School</h4><br>
+                            <p style="margin-left: -137px;">18 Months</p>
+                            <p>1-1 Mentorship & Job Support</p>
+                          </div>
+                          </div><hr>
+                          <p><button class="section_e_button">View Program</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-bottom: 100px;">
+                <button class="dropbtn" style="margin-top: 30px;padding: 20px; width: 300px; border-radius: 10px; font-size: larger;"><b>VIEW MORE CATEGORIES</b></button>
+            </div>
+        </section>
+
+
+        <section class="section_f" style="background-color: #fafbfc; width: 100vw;">
+            <h1 style="font-size: 40px;">Explore Free Courses</h1>
+            <div class="section_f_flex" style="display: flex;">
+                <div class="section_f_card">
+                    <img src="/images/section_f_1.jpeg" style="width:100%">
+                    <h2>Marketing</h2>
+                    <p>Advance your career in the field of <br>marketing with industry relevant <br>free courses.</p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+                <div class="section_f_card">
+                    <img src="/images/section_f_2.jpeg" style="width:100%">
+                    <h2>Data Science & Machine Learning</h2>
+                    <p>Build your foundation in one of the hottest industry of the 21st century.</p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+                <div class="section_f_card">
+                    <img src="/images/section_f_3.jpeg" style="width:100%">
+                    <h2>Management</h2>
+                    <p>Master industry-relevant skills that are required to become a leader and<br> drive organizationl success.</p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="dropbtn" style="margin-top: 30px;padding: 20px; width: 300px; border-radius: 10px; font-size: larger;"><b>VIEW ALL FREE COURSES</b></button>
+            </div>
+        </section>
+
+
+
+        <section class="section_f" style="width: 100vw;">
+            <h1 style="font-size: 40px;">upGrad Webinars</h1>
+            <div class="section_f_flex" style="display: flex;">
+                <div class="section_f_card">
+                    <img src="/images/section_f_4.jpeg" style="width:100%">
+                    <h2>Data Science</h2>
+                    <p>Discover the newest trends from data<br> science experts, big data <br>practitioners, and industry leaders.</p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+                <div class="section_f_card">
+                    <img src="/images/section_f_5.jpeg" style="width:100%">
+                    <h2>Technology</h2>
+                    <p>Get basic to advance in-depth<br> knowledge on emerging <br>technologies and opportunities.  </p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+                <div class="section_f_card">
+                    <img src="/images/section_f_6.jpeg" style="width:100%">
+                    <h2>Management</h2>
+                    <p>Dive deep into strategy and <br>leadership with lessons from<br> business and management experts. </p>
+                    <p><button class="secton_f_btn">Explore Now</button></p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="dropbtn" style="margin-top: 30px;padding: 20px; width: 350px; border-radius: 10px; font-size: larger;"><b>VIEW ALL UPGRAD WEBINARS</b></button>
+            </div>
+        </section>
+
+
+        <section class="section_g">
+            <h1 style="font-size: 39px;">Our other Alumni</h1>
+            <div class="section_g_flex" style="display: flex;">
+                <div class="section_g_card">
+                    <img src="/images/section_g_1.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_1_1.jpeg" style="margin: 40px 10px 50px 10px;">
+                  </div>
+                  <div class="section_g_card">
+                    <img src="/images/section_g_2.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_2_1.jpeg" style="margin: 40px 30px 50px 30px;">
+                  </div>
+                  <div class="section_g_card">
+                    <img src="/images/section_g_3.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_3_1.jpeg" style="margin: 40px 10px 50px 10px;">
+                  </div>
+                  <div class="section_g_card">
+                    <img src="/images/section_g_4.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_5_1.jpeg" style="margin: 40px 20px 50px 20px;">
+                  </div>
+                  <div class="section_g_card">
+                    <img src="/images/section_g_5.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_5_1.jpeg" style="margin: 40px 20px 50px 20px;">
+                  </div>
+                  <div class="section_g_card">
+                    <img src="/images/section_g_6.jpeg" style="border-radius: 50%; margin-top: 20px;">
+                    <p style="font-size: 13px;">Amarpal Singh</p><br>
+                    <img src="/images/section_g_6_1.jpeg" style="margin: 40px 40px 50px 40px;">
+                  </div>
+            </div>
+        </section>
+
+        <section class="section_h">
+            <h2>Where our Alumni Work</h2>
+            <div class="section_h_flex" style="display: flex;">
+                <div><img src="/images/section_h_1.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_2.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_3.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_4.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_5.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_6.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_7.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_8.jpeg" width="84" height="28"></div>
+                <div><img src="/images/section_h_9.jpeg" width="84" height="28"></div>
+            </div>
+            <div style="text-align: center;">
+                <button class="dropbtn" style="margin-top: 60px;padding: 20px; width: 300px; border-radius: 10px; font-size: larger;"><b>GET CAREER HANDBOOK</b></button>
+            </div>
+        </section>
+
+        <section class="section_i">
+            <div id="section_i_container">
+            <h1 style="font-size: 39px;">Our Media Presence</h1>
+            <div class="section_i_flex" style="display: flex;">
+                <div class="section_i_card">
+                    <p>upGrad commits to 'fast-<br>forward your career' in latest ad<br> film</p>
+                    <img src="/images/section_i_1.jpeg" >
+                  </div>
+                  <div class="section_i_card">
+                    <p>upGrad commits to 'fast-<br>forward your career' in latest ad<br> film</p>
+                    <img src="/images/section_i_2.jpeg" >
+                  </div>
+                  <div class="section_i_card">
+                    <p>upGrad commits to 'fast-<br>forward your career' in latest ad<br> film</p>
+                    <img src="/images/section_i_3.jpeg" >
+                  </div>
+                  <div class="section_i_card">
+                    <p>upGrad commits to 'fast-<br>forward your career' in latest ad<br> film</p>
+                    <img src="/images/section_i_4.jpeg" >
+                  </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section_j">
+            <h1 style="font-size: 39px;">upGrad Learner Support</h1>
+            <div class="section_j_flex" style="display: flex;">
+                <div class="section_j_card">
+                    <p>&#x1F4F1;  1800 210 2020</p>
+                  </div>
+                  <div class="section_j_card">
+                    <p>&#x1F4F1;  +918045604032</p>
+                  </div>
+            </div>
+            <div style=" padding-top: 50px;"><p style="font-size: 18px;">Call us between 7 AM-12 AM</p></div>
+        </section>
+
+        <section class="section_k">
+            <div class="section_k_card">
+                <div style="padding: 20px;">
+                    <h5 style="font-size: 17px;">Disclaimer:</h5>
+                    <p>upGrad is India’s largest online higher education company, as per monthly visit data and total visits data for the last 28 days received from similar web, as on April 13,<br> 2020.</p>
+                    <p>Deakin University CRICOS Provider Code 00113B.</p>
+                  </div>
+            </div>
+        </section>
+       </div>
+        
+    </main>
+    <footer>
+        <div class="footer_main_div">
+            <div id="footer_first_div_container">
+                <div>
+                    <a href="#"><img style="color: white;" src="/images/upgrad-logo.png" width="90px" height="40px"></a>
+                    <p class="footer_small">Building Careers of Tomorrow</p><br>
+                    <div>
+                        <a><img class="social_img_footer" src="/images/facebook.png"></a>
+                        <a><img class="social_img_footer" src="/images/linkedin.png"></a>
+                        <a><img class="social_img_footer" src="/images/twitter.png"></a>
+                        <a><img class="social_img_footer" src="/images/youtube.png"></a>
+                    </div>
+                </div>
+                <div style="display: flexbox; justify-content: flex-end;">
+                    <button class="footer_btn ">Get the android app</button>
+                    <button class="footer_btn ">Get  the  iOS  app</button>
+                </div>
+            </div><br><hr>
+            <div id="footer_second_div">
+                <div style="width: 33vw;">
+                    <p class="footer_medium">UPGRAD</p>
+                    <a href="#" class="footer_small">About</a><br>
+                    <a href="#" class="footer_small">Carrers</a><br>
+                    <a href="#" class="footer_small">Placement Support</a><br>
+                    <a href="#" class="footer_small">upGrad Blog</a><br>
+                    <a href="#" class="footer_small">Success Stories</a><br>
+                    <a href="#" class="footer_small">For Teams</a><br>
+                    <a href="#" class="footer_small">Data Science Programs for Teams</a><br>
+                    <a href="#" class="footer_small">Product and Technology Programs for Teams</a><br>
+                    <a href="#" class="footer_small">Management Programs for Teams</a><br>
+                    <a href="#" class="footer_small">Online Power Learning</a><br>
+                    <a href="#" class="footer_small">Xchange</a><br>
+                    <a href="#" class="footer_small">BaseCamp</a><br>
+                    <a href="#" class="footer_small">For Business</a><br>
+                    <a href="#" class="footer_small">Watch Free Videos</a><br>
+                    <a href="#" class="footer_small">upGrad In Media</a><br>
+                </div>
+                <div style="width: 33vw;">
+                    <p class="footer_medium">ONEUPGRAD</p>
+                    <a href="#" class="footer_small">upGrad Rekrut</a><br>
+                    <a href="#" class="footer_small">upGrad Jeet</a><br>
+                    <a href="#" class="footer_small">upGrad Campus</a><br>
+                    <a href="#" class="footer_small">Study Abroad</a><br>
+                </div>
+                <div style="width: 33vw;">
+                    <p class="footer_medium">SUPPORT</p>
+                    <a href="#" class="footer_small">Contact</a><br>
+                    <a href="#" class="footer_small">Grievance Redressal</a><br>
+                    <a href="#" class="footer_small">Terms & Conditions</a><br>
+                    <a href="#" class="footer_small">Privacy Policy</a><br>
+                </div>
+            </div><br><hr>
+            <div id="footer_third_div">
+                <div style="display: flex;">
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">MBA</p>
+                        <a href="#" class="footer_small">Liverpool Business School | MBA (Global)</a><br>
+                        <a href="#" class="footer_small">Deakin Business School | MBA (Global)</a><br>
+                        <a href="#" class="footer_small">MBA | Executive Program</a><br>
+                        <a href="#" class="footer_small">MBA (Executive) | Specialisation in Business Analytics</a><br>
+                        <a href="#" class="footer_small">Business Administration SSBM | Global Doctorate</a><br>
+                        <a href="#" class="footer_small">Management | Post Graduate Program</a><br>
+                        <a href="#" class="footer_small">Job Linked Management Program with IMT-G | PG Program</a><br>
+                        <a href="#" class="footer_small">PG Diploma in Management | PG Diploma</a><br>
+                        <a href="#" class="footer_small">Digital Finance & Banking | MBA</a><br>
+                        <a href="#" class="footer_small">Deakin Business School | MBA (Global)</a><br>
+                    </div>
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">DATA SCIENCE</p>
+                        <a href="#" class="footer_small">Data Science | Master of Science</a><br>
+                        <a href="#" class="footer_small">Data Science | Executive PG Programme</a><br>
+                        <a href="#" class="footer_small">Data Science for Business Decision Making | Professional Certific</a><br>
+                        <a href="#" class="footer_small">Data Science | Master's Degree</a><br>
+                        <a href="#" class="footer_small">Data Science | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Data Analytics | Certificate Program</a><br>
+                        <a href="#" class="footer_small">Data Science | Advanced Programme</a><br>
+                        <a href="#" class="footer_small">Data Science and Business Analytics | Professional Certificate Pro</a><br>
+                        <a href="#" class="footer_small">Python Programming Bootcamp | Certification</a><br>
+                    </div>
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">DOCTORATE</p>
+                        <a href="#" class="footer_small">Business Administration SSBM | Global Doctorate</a><br>
+                    </div>
+                </div><br> 
+                <div style="width: 33vw;">
+                    <p class="footer_medium">SOFTWARE & TECH</p>
+                        <a href="#" class="footer_small">Computer Science | Master's Degree</a><br>
+                        <a href="#" class="footer_small">Software Development - Spl. in Full Stack Development | Executi</a><br>
+                        <a href="#" class="footer_small">Full Stack Development | Bootcamp Program</a><br>
+                        <a href="#" class="footer_small">Cybersecurity | Certificate Program</a><br>
+                        <a href="#" class="footer_small">Software Development - Spl. in Blockchain | Executive Post Graduate</a><br>
+                        <a href="#" class="footer_small">Software Development - Spl. in DevOps | Executive Post Graduate</a><br>
+                        <a href="#" class="footer_small">Cyber Security | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Software Engineering | Post Graduate Certification</a><br>
+                        <a href="#" class="footer_small">Software Development - Spl. in Cloud Backend Development | Executive</a><br>
+                        <a href="#" class="footer_small">DevOps | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Blockchain | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Cloud Backend Development | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Full Stack Development | Certificate Program</a><br>
+                        <a href="#" class="footer_small">Big Data Programming | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Software Development - Spl. in Big Data Programming | Executive</a><br>
+                        <a href="#" class="footer_small">Cloud Backend Development Certificate Program | Cloud Backen</a><br>
+                        <a href="#" class="footer_small">Blockchain Certificate Program | Blockchain Certificate Program</a><br>
+                        <a href="#" class="footer_small">Java Programming | Certification</a><br>
+                        <a href="#" class="footer_small">Cybersecurity Certificate Program | Certificate</a><br>
+                </div>
+            </div>
+            <br><hr>
+            <div id="footer_fourth_div">
+                <div style="display: flex;">
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">AI & ML</p>
+                        <a href="#" class="footer_small">Machine Learning & AI | Master of Science</a><br>
+                        <a href="#" class="footer_small">Machine Learning & AI | Master of Science</a><br>
+                        <a href="#" class="footer_small">Machine Learning & AI | Executive Post Graduate Programme</a><br>
+                        <a href="#" class="footer_small">Machine Learning & Cloud | Advanced Certification</a><br>
+                        <a href="#" class="footer_small">Machine Learning & NLP | Advanced Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Machine Learning & Deep Learning | Advanced Certificate Progra</a><br>
+                        <a href="#" class="footer_small">AI for Managers | Advanced Certificate Program</a><br>
+                    </div>
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">MARKETING</p>
+                        <a href="#" class="footer_small">Digital Marketing and Communication | Advanced Certificate</a><br>
+                        <a href="#" class="footer_small">Digital Branding & Advertising | Advanced Certificate</a><br>
+                        <a href="#" class="footer_small">Marketing Analytics | Certificate Program</a><br>
+                        <a href="#" class="footer_small">Digital Marketing | Executive Development Program</a><br>
+                    </div>
+                    <div style="width: 33vw;">
+                        <p class="footer_medium">MANAGEMENT</p>
+                        <a href="#" class="footer_small">Leadership and Management in New Age Business | Certificate </a><br>
+                        <a href="#" class="footer_small">Product Management | Certification Program</a><br>
+                        <a href="#" class="footer_small">Human Resource Management | Executive PG Programme</a><br>
+                        <a href="#" class="footer_small">HR Management and Analytics | Professional Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Healthcare Management | Executive PG Programme</a><br>
+                        <a href="#" class="footer_small">Integrated Supply Chain Management | Global Master Certificat</a><br>
+                        <a href="#" class="footer_small">Finance for Non Finance Executives | Certificate Programme</a><br>
+                        <a href="#" class="footer_small">Job Linked Management Program with IMT-G | PG Program</a><br>
+                        <a href="#" class="footer_small">Effective Leadership and Management | Global Professional Certi</a><br>
+                        <a href="#" class="footer_small">Management | PG Program</a><br>
+                        <a href="#" class="footer_small">HR Analytics | Executive Development Program</a><br>
+                        <a href="#" class="footer_small">Supply Chain Management | Executive Program</a><br>
+                        <a href="#" class="footer_small">Management Essentials | Management Essentials</a><br>
+                    </div>
+                </div><br> 
+                <div style="width: 33vw;">
+                    <p class="footer_medium">BUSINESS ANALYTICS</p>
+                        <a href="#" class="footer_small">Business Analytics | Executive PG Programme</a><br>
+                        <a href="#" class="footer_small">Data Science and Business Analytics | Professional Certificate Program</a><br>
+                        <a href="#" class="footer_small">Business Analytics | Global Master Certificate</a><br>
+                        <a href="#" class="footer_small">Business Analytics | Certificate Program</a><br>
+                        <a href="#" class="footer_small">Marketing Analytics | Certificate Program</a><br>
+                </div>
+            </div>
+            <br><hr>
+            <div id="footer_fifth_div" style="display: flex;">
+                <div style="width: 33vw;">
+                    <p class="footer_medium">JOB GUARANTEED</p>
+                    <a href="#" class="footer_small">Job Linked Management Program with IMT-G | PG Program</a><br>
+                    <a href="#" class="footer_small">Full Stack Development | Bootcamp Program</a><br>
+                    <a href="#" class="footer_small">Software Engineering | PG Certification</a><br>
+                </div>
+                <div style="width: 33vw;">
+                    <p class="footer_medium">LAW</p>
+                    <a href="#" class="footer_small">Corporate & Financial Law | LL.M.</a><br>
+                    <a href="#" class="footer_small">Intellectual Property & Technology Law | LL.M.</a><br>
+                    <a href="#" class="footer_small">Dispute Resolution | LL.M.</a><br>
+                </div>
+                <div style="width: 33vw;">
+                    <p class="footer_medium">STUDY ABROAD</p>
+                    <a href="#" class="footer_small">Master of Business Administration (90 ECTS) | MBA</a><br>
+                    <a href="#" class="footer_small">Master of Business Administration (60 ECTS) | Master of Busine</a><br>
+                    <a href="#" class="footer_small">Computer Science | Master's Degree</a><br>
+                    <a href="#" class="footer_small">MS in Data Analytics | MS in Data Analytics</a><br>
+                    <a href="#" class="footer_small">Project Management | MS</a><br>
+                    <a href="#" class="footer_small">Information Technology | MS</a><br>
+                    <a href="#" class="footer_small">International Management | Master's Degree</a><br>
+                    <a href="#" class="footer_small">Data Science | Master's Degree</a><br>
+                    <a href="#" class="footer_small">Masters Degree in Data Analytics and Visualization | Masters Degre</a><br>
+                    <a href="#" class="footer_small">Masters Degree in Artificial Intelligence | Masters Degree in Artif</a><br>
+                    <a href="#" class="footer_small">Masters Degree in Cybersecurity | Masters Degree in Cybersecurity</a><br>
+                    <a href="#" class="footer_small">MBS in Entrepreneurship and Marketing | MBS in Entrepreneurshi</a><br>
+                    <a href="#" class="footer_small">MSc in Data Analytics | MSc in Data Analytics</a><br>
+                    <a href="#" class="footer_small">Master of Business Administration (MBA) | Master of Business Admi</a><br>
+                    <a href="#" class="footer_small">MS in Biomedical Engineering | MS in Biomedical Engineering</a><br>
+                    <a href="#" class="footer_small">MS in Civil Engineering | MS in Civil Engineering</a><br>
+                    <a href="#" class="footer_small">MS in Mechanical Engineering | MS in Mechanical Engineering</a><br>
+                    <a href="#" class="footer_small">MS in Computer Science | MS in Computer Science</a><br>
+                    <a href="#" class="footer_small">Master of Business Administration | Master of Business Administrati</a><br>
+                </div>
+            </div><br><hr>
+            <div id="footer_sixth_div">
+                <p>© 2015-2021 upGrad Education Private Limited. All rights reserved</p>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html> 
