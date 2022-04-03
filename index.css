@@ -116,8 +116,9 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   .text {font-size: 11px}
+  
 }
 
 
@@ -183,7 +184,8 @@ section_e_img {
 
 
 .section_f {
-  margin: 50px 100px 10px 100px;
+  width: 90%;
+  margin: 50px 10px 10px 5px;
   /* padding-bottom: 100px; */
 }
 .section_f_card {
@@ -372,9 +374,7 @@ footer {
     padding: 10px 10px 5px 20px;
     width: 100%;
   }
-  /* .main_div {
-    width: 20vw;
-  } */
+  
   .section_f {
     padding: 0;
     margin: 0;
@@ -386,6 +386,18 @@ footer {
 
 
 @media only screen and (max-width: 1000px){
+  .headContainer {
+    width: 100%;
+  }
+  .head_flex {
+    width: 100%;
+    margin-right: 2px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+
   .section_b {
     width: 100vw;
     margin: 0px;
@@ -393,15 +405,14 @@ footer {
     
   }
   .section_b_maindiv {
-    width: 50vw;
+    margin-left: 3px;
+    padding-left: 3px;
   }
-  .section_b button {
+  /* .section_b button {
     width: 200px;
-  }
-  
-  /* .section_b_flex img {
-    display: none;
   } */
+  
+  
   
   
   .section_c {
@@ -499,4 +510,21 @@ footer {
     margin: 3px;
   }
 
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .section_b_maindiv {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #head_new {
+    width: 40vw;
+    margin-left: 25px;
+    /* padding-left: 0; */
+  }
+  .extra {
+    display: none;
+  }
 }
